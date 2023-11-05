@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product detail</title>
+    </head>
+    <body>
+        {% for x in Pgdb %}
+        <h1>Article</h1>
+        <p><strong>name :</strong>{{x.name}}</p>
+        <p><strong>author :</strong>{{x.author}}</p>
+        <p><strong>content :</strong>{{x.content}}</p>
+    </body>
+    {% endfor %}
+
+</html>

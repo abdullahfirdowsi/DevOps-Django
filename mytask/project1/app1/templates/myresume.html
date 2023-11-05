@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Resume</title>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'myresume_style.css' %}">
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
+</head>
+
+<body>
+  <article class="resume">
+    <section class="resume_left">
+      <div class="resume_profile">
+        <img src = "{% static 'photo.jpg' %}" alt ="profile_pic" />
+      </div>
+      <div class="resume_content">
+        <div class="resume_info">
+          <div class="bold">
+            <h1>Abdullah Firdowsi</h1>
+            <br>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <pre>
+Address:  51/35, East Street,
+          Mangalampet,
+          Vridhachalam,
+          Cuddalore - 606104
+              </pre>
+          </li>
+          <li>
+            <pre>
+Phone: 9943980796
+            </pre>
+          </li>
+          <li>
+            <pre>
+Email: <br> abdullahfirdowsi@gmail.com
+            </pre>
+          </li>
+        </ul>
+
+        <div class="resume_info">
+          <div class="bold">
+            <h3>Social Links</h3>
+          </div>
+          <br>
+          <h4><a href="https://github.com/abdullahfirdowsi"><i class='bx bxl-github' >abdullahfirdowsi</i></a></h4>
+          <h4><a href="https://www.linkedin.com/in/abdullahfirdowsi/"><i class='bx bxl-linkedin' >abdullahfirdowsi</i></a></h4>
+          <h4><a href="https://www.instagram.com/abdullah_firdowsi/"><i class='bx bxl-instagram' >abdullah_firdowsi</i></a></h4>
+      </div>
+        
+        
+    </section>
+    <section class="resume_right">
+      <div class="resume_item resume_about">
+        <h1 class="bold">Profile</h1>
+        <p>
+          Seeking the position in a challenging environment where my enthusiast, creativity, skills, knowledge of
+          programming, and unmatched attention to details will be employed in giving clients’ an awesome look that suits
+          the occasion.
+        </p>
+      </div>
+      <div class="resume_item">
+        <h1 class="bold">Education</h1>
+        <pre><b>
+2018 - 2019     Senthil Matric Hr Sec School</b>
+                SSLC 92%
+          </pre>
+        <pre><b>
+2019 - 2021     Sathya Saai Matric Hr Sec School</b>
+                HSC 91%
+          </pre>
+        <pre><b>
+2021 - 2025     Karpagam College of Engineering</b>
+                B.Tech Artificial Intelligence and Data Science<pre>
+                CGPA - 8.5</pre>
+            </pre>
+      </div>
+      <div class="resume_item">
+        <h1 class="bold">Experience</h1>
+        <pre><b>
+Jun - Aug, 2022   Basics of Artificial Intelligence (30 Days)</b>
+                  Pantech Solutions
+          </pre>
+          <pre><b>
+May, 2023         Data Visualization using Power BI (5 Days)</b>
+                  We & Data 
+          </pre>
+      </div>
+      <!------------------------SKILLS----------------------->
+      <div class="resume_item skills">
+        
+        <div class="skill_content">
+          <section class="skill_left">
+            <h1 class="bold">Skills</h1>
+            <br>
+            <div class="skill_bar">
+              <span class="skill_name">Python</span>
+              <div class="skill_level">
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+              </div>
+            </div>
+            <div class="skill_bar">
+              <span class="skill_name">Java</span>
+              <div class="skill_level">
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="not_full"></span>
+              </div>
+            </div>
+            <div class="skill_bar">
+              <span class="skill_name">R</span>
+              <div class="skill_level">
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="not_full"></span>
+                <span class="not_full"></span>
+              </div>
+            </div>
+          </section>
+          <section class="skill_right">
+            <h1 class="bold">Tools</h1>
+            <br>
+            <div class="skill_bar">
+              <span class="skill_name">RStudio</span>
+              <div class="skill_level">
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="not_full"></span>
+              </div>
+            </div>
+            <div class="skill_bar">
+              <span class="skill_name">PowerBI</span>
+              <div class="skill_level">
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="not_full"></span>
+              </div>
+            </div>
+            <div class="skill_bar">
+              <span class="skill_name">Tableau</span>
+              <div class="skill_level">
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="full"></span>
+                <span class="not_full"></span>
+                <span class="not_full"></span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <br>
+      <!------------------------DECLARATION----------------------->
+      <div>
+        <h1>Acknowledgement</h1>
+        <p> I hereby declare that all the information given above is true and correct to the best of my knowledge.</p>
+        
+      </div>
+
+      <style>
+
+    .signature {
+      text-align: right;
+      margin-top: 30px;
+    }
+    /* .signature h4 {
+        text-align: right;
+    } */
+    /* .Acknowledgment h4 {
+        text-align: right;
+    }
+    .Acknowledgment p {
+        text-align: right;
+    } */
+
+    .signature img {
+      max-width: 55px;
+      animation: scaleIn 1s ease-in-out;
+      color: red;
+    }
+      </style>
+
+    <div class="signature animated fadeIn">
+        <h4>Signature</h4><br>
+        <img src="{% static 'sign.png'%}" alt="Signature">
+      </div>
+
+
+</body>
+</html>
+
+    </section>
+  </article>
+</body>
+
+</html>

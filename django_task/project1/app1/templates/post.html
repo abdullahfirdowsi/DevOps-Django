@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tech Blog</title>
+	<link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css'%}"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'css/templatemo-xtra-blog.css'%}" rel="stylesheet">
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <h1 class="text-center">Tech Blog</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="http://127.0.0.1:8000/techblog/home" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="http://127.0.0.1:8000/techblog/blog" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Blog
+                    </a></li>
+                    <li class="tm-nav-item"><a href="http://127.0.0.1:8000/techblog/about" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About
+                    </a></li>
+                    <li class="tm-nav-item"><a href="http://127.0.0.1:8000/techblog/contact" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a rel="nofollow" href="https://fb.com/" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>            
+            <div class="row tm-row">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                    <!-- Video player 1422x800 -->
+                    <video width="954" height="535" controls class="tm-mb-40">
+                        <source src="{% static 'vid/gpt4.mp4' %}" type="video/mp4">							  
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="row tm-row">
+                <div class="col-lg-8 tm-post-col">
+                    <div class="tm-post-full">                    
+                        <div class="mb-4">
+                            <h2 class="pt-2 tm-color-primary tm-post-title">When comparing GPT-3 and GPT-4 chatbot technologies, which is the preferable tool?</h2>
+                            <p class="tm-mb-40">July 10, 2023 posted by Sona Radhakrishnan</p>
+                            <p>
+                                The popularity of chatbots is rising in the present day. These are computer programmes that can communicate with people in natural language to assist in task completion or information delivery.
+<br>
+Artificial intelligence and natural language processing are used by chatbots to interpret user input and provide responses. They can serve as virtual assistants, help with customer support, or serve other functions including offering personalised content or professional advice. Chatbots can be employed to automate repetitive operations like appointment scheduling and payment processing.
+<br>
+By removing the need for users to master difficult instructions or travel through confusing menus, chatbots have the potential to transform the way we interact with computers and software programmes. </p>
+                            <p>
+                                As chat GPT 3 and 4 emerge on the market, it’s critical to weigh their advantages and disadvantages before choosing which one to employ. GPT 3 is more productive, but it is also more expensive and requires more training data. The characteristics that make GPT 3 so powerful are absent from GPT 4, although it has a smaller memory footprint. What matters most in the end is your needs and the solution that best meets them.
+                            </p>
+                            <span class="d-block text-right tm-color-primary">#GenAI #GPT #ChatGPT</span>
+                        </div>
+                        
+                        <!-- Comments -->
+                        <div>
+                            <h2 class="tm-color-primary tm-post-title">Comments</h2>
+                            <hr class="tm-hr-primary tm-mb-45">
+                            <!-- <div class="tm-comment tm-mb-45">
+                                <figure class="tm-comment-figure">
+                                    <img src="{% static 'img/a1.jpg' %}" alt="Image" class="mb-2 rounded-circle img-thumbnail">
+                                    <figcaption class="tm-color-primary text-center">GUNALAN A</figcaption>
+                                </figure>
+                                <div>
+                                    <p>
+                                        Thanks for very interesting post.
+                                        It gives the right intention on the ML. About useless tasks like fake news (I do not like them although)—sometimes mathematician just plays with numbers and after 100–30–10 years it applies into engineering invention from the theory. Regarding end-to-end supervised heat generators — it becomes a software development field, we will forget about it soon like we do not care about RSA using our https in browsers :)
+                                    </p>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="tm-color-primary">REPLY</a>
+                                        <span class="tm-color-primary">July 15, 2023</span>
+                                    </div>                                                 
+                                </div>                                
+                            </div> -->
+                            <div class="tm-comment-reply tm-mb-45">
+                                <hr>
+                                <div class="tm-comment">
+                                    <figure class="tm-comment-figure">
+                                        <img src="{% static 'img/c1.jpg' %}" alt="Image" class="mb-2 rounded-circle img-thumbnail">
+                                        <figcaption class="tm-color-primary text-center">GUNALAN A</figcaption>    
+                                    </figure>
+                                    <p>
+                                        Thanks for very interesting post.
+                                        It gives the right intention on the ML. About useless tasks like fake news (I do not like them although)—sometimes mathematician just plays with numbers and after 100–30–10 years it applies into engineering invention from the theory. Regarding end-to-end supervised heat generators — it becomes a software development field, we will forget about it soon like we do not care about RSA using our https in browsers :)
+                                    </p>
+                                </div>                                
+                                <span class="d-block text-right tm-color-primary">July 25, 2023</span>
+                            </div>
+                            <div class="tm-comment-reply tm-mb-45">
+                                <hr>
+                                <div class="tm-comment">
+                                    <figure class="tm-comment-figure">
+                                        <img src="{% static 'img/c2.jpg' %}" alt="Image" class="mb-2 rounded-circle img-thumbnail">
+                                        <figcaption class="tm-color-primary text-center">SRINIDHI S</figcaption>    
+                                    </figure>
+                                    <p>
+                                        “Not really, they aren’t even really very helpful at the moment.”
+Generative models are used for some very interesting and useful projects. If the only use case you can think of is undressing people and faking Mark’s voice, that is a limitation of your creativity, not the capabilities of generative modelling. Conditional GAN’s are able to do some pretty impressive things…
+                                    </p>
+                                </div>                                
+                                <span class="d-block text-right tm-color-primary">August 15, 2023</span>
+                            </div>
+                            <form action="" class="mb-5 tm-comment-form">
+                                <h2 class="tm-color-primary tm-post-title mb-4">Your comment</h2>
+                                <div class="mb-4">
+                                    <input class="form-control" name="name" type="text">
+                                </div>
+                                <div class="mb-4">
+                                    <input class="form-control" name="email" type="text">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" name="message" rows="6"></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button class="tm-btn tm-btn-primary tm-btn-small">Submit</button>                        
+                                </div>                                
+                            </form>                          
+                        </div>
+                    </div>
+                </div>
+                <aside class="col-lg-4 tm-aside-col">
+                    <div class="tm-post-sidebar">
+                        <hr class="mb-3 tm-hr-primary">
+                        <h2 class="mb-4 tm-post-title tm-color-primary">Categories</h2>
+                        <ul class="tm-mb-75 pl-5 tm-category-list">
+                            <li><a href="#" class="tm-color-primary">Artificial Intelligence</a></li>
+                            <li><a href="#" class="tm-color-primary">Cloud Computing & Big Data</a></li>
+                            <li><a href="#" class="tm-color-primary">Cyber Security</a></li>
+                            <li><a href="#" class="tm-color-primary">Data Science</a></li>
+                            <li><a href="#" class="tm-color-primary">Generative AI</a></li>
+                            <li><a href="#" class="tm-color-primary">LLM Models</a></li>
+                            <li><a href="#" class="tm-color-primary">Machine Learning</a></li>
+                            <li><a href="#" class="tm-color-primary">Natural Language Processing</a></li>
+                            <li><a href="#" class="tm-color-primary">Web Development</a></li>
+                        </ul>
+                        <hr class="mb-3 tm-hr-primary">
+                        <h2 class="tm-mb-40 tm-post-title tm-color-primary">Related Posts</h2>
+                        <a href="#" class="d-block tm-mb-40">
+                            <figure>
+                                <img src="{% static 'img/add1.jpg' %}" alt="Image" class="mb-3 img-fluid">
+                                <figcaption class="tm-color-primary">Generative AI: A Key to Machine Intelligence?</figcaption>
+                            </figure>
+                        </a>
+                        <a href="#" class="d-block tm-mb-40">
+                            <figure>
+                                <img src="{% static 'img/add2.jpg' %}" alt="Image" class="mb-3 img-fluid">
+                                <figcaption class="tm-color-primary">How to Keep Up with AI/ML in 2023 as a Beginner</figcaption>
+                            </figure>
+                        </a>
+                        <a href="#" class="d-block tm-mb-40">
+                            <figure>
+                                <img src="{% static 'img/add3.jpg' %}" alt="Image" class="mb-3 img-fluid">
+                                <figcaption class="tm-color-primary">GPT and Human Psychology</figcaption>
+                            </figure>
+                        </a>
+                    </div>                    
+                </aside>
+            </div>
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                           
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2023 Tech Blog Pvt. Ltd.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>

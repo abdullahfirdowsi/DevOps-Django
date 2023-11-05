@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tech Blog</title>
+	<link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css'%}"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'css/templatemo-xtra-blog.css'%}" rel="stylesheet">
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <h1 class="text-center">Tech Blog</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="http://127.0.0.1:8000/techblog/home" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="http://127.0.0.1:8000/techblog/blog" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Blog
+                    </a></li>
+                    <li class="tm-nav-item"><a href="http://127.0.0.1:8000/techblog/about" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About
+                    </a></li>
+                    <li class="tm-nav-item"><a href="http://127.0.0.1:8000/techblog/contact" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a rel="nofollow" href="https://fb.com/" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>            
+            <div class="row tm-row tm-mb-45">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                    <img src="img/about-01.jpg" alt="Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="row tm-row tm-mb-40">
+                <div class="col-12">                    
+                    <div class="mb-4">
+                        <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">About Tech Blog</h2>
+                        <p>
+                            <a rel="nofollow" href="http://127.0.0.1:8000/techblog/home" target="_blank">Tech Blog</a> 
+                            , short for technology blog, is a website or online platform that focuses on providing information, insights, and news related to technology and its various aspects. Tech blogs cover a wide range of topics, including the latest trends, updates, reviews, tutorials, opinions, and analysis in the world of technology.
+                    </p>
+                        <p>
+                            In this online platform that offers a wide range of information and insights on technology. It covers topics such as the latest trends, news, reviews, tutorials, and opinions in the tech industry. Tech blogs keep readers updated on advancements in software, hardware, gadgets, AI, cybersecurity, programming, and more. They provide timely news updates, detailed product reviews, how-to guides, and analysis, helping readers make informed decisions and navigate the ever-evolving tech landscape. With guest contributions from experts and interactive community features, tech blogs foster discussions, provide valuable resources, and empower readers with the knowledge needed to stay informed and engaged in the world of technology.
+                        </p>                            
+                    </div>                    
+                </div>
+            </div>
+            <div class="row tm-row tm-mb-120">
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-bezier-curve fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Background</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            In the realm of programming, the term background can encompass various processes or tasks that operate simultaneously alongside the main program. Typically situated within the background of the user interface, these operations diligently proceed without obstructing or disrupting the primary execution flow.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-users-cog fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Teamwork</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            Teamwork is the collaborative effort of a group to achieve a common goal or to complete a task in the most effective and efficient way. Teams are made up of individuals with different skills and talents, and they work together to pool their resources and expertise to achieve their goals.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fab fa-creative-commons-sampling fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Our Core Value</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            Core values are the guiding principles that define an organization's culture and priorities. They are the foundation on which the organization's strategy is built, and they provide a framework for decision-making.  
+                        </p>
+                    </div>
+                </div>
+            </div>            
+            <div class="row tm-row tm-mb-60">
+                <div class="col-12">
+                    <hr class="tm-hr-primary  tm-mb-55">
+                </div>                
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/about-02.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">John Henry</h2>
+                            <h3 class="tm-h3 mb-3">CEO/Founder</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Aliquam non vulputate lectus, vel ultricies diam. Suspendisse at ipsum
+                                hendrerit, vestibulum mi id, mattis tortor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/about-03.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Timy Cake</h2>
+                            <h3 class="tm-h3 mb-3">Project Director</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Quisque in bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. 
+                                Aliquam lorem mi, maximus at iaculis ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/about-04.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Jay Zoona</h2>
+                            <h3 class="tm-h3 mb-3">Supervisor</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Maecenas eu mi eu dui cursus consequat non eu metus. Morbi ac
+                                turpis eleifend, commodo purus eget, commodo mauris.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="img/about-05.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Catherine Soft</h2>
+                            <h3 class="tm-h3 mb-3">Team Leader</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Integer eu sapien hendrerit,
+                                imperdiet arcu sit amet, sollicitudin ipsum.
+                                Phasellus consequat suscipit ligula eget bibendum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                           
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2023 Tech Blog Pvt. Ltd.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>

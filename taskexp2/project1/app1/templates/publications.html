@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+    <body>
+    <h1>Publications</h1>
+      <table border="2">
+        <tr>
+            <td>id</td>
+            <td>Title</td>
+            <td>author</td>
+            <td>pub_date</td>
+            <td>price</td>
+            <td>Expensive</td>
+        </tr>
+        {% for x in myBook %}
+        <tr>
+            <td>{{x.id}}</td>
+            <td>{{x.title}}</td>
+            <td>{{x.author}}</td>
+            <td>{{x.pub_date}}</td>
+            <td>{{x.price}}</td>
+            <td>
+                {% if x.is_expensive %}
+                    <p>Afforadble</p>
+                {% else %}
+                    <p>cheap</p>
+            </td>
+        </tr>
+             {% endif %}
+        {% endfor %}
+      </table>
+</body>
+</html>

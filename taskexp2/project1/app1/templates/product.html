@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Details</title>
+    </head>
+    <body>
+        <h1>Product</h1>
+    <table border="1">
+        <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Descriptions</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total Cost</th>
+        </tr>
+        {% for x in Productdb %}
+        <tr>
+            <td>{{x.id}}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.description}}</td>
+            <td>{{x.price}}</td>
+            <td>{{x.quantity}}</td>
+            <td>
+                ${{x.calculate_total_cost}}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+       
+    </body>
+</html>

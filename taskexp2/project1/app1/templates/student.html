@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student DataBase</title>
+    </head>
+    <body>
+        <h1>Student</h1>
+    <table border="1">
+        <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Is_enrolled</th>
+        <th>Pass</th>
+        </tr>
+        {% for x in Studentdb %}
+        <tr>
+            <td>{{x.id}}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.age}}</td>
+            <td>{{x.grade}}</td>
+            <td>{{x.is_enrolled}}</td>
+            <td>
+                {% if x.is_passing %}
+                <p>Better</p>
+                {% else %}
+                <p>Excellent</p>
+            </td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </table>
+    </body>
+</html>
